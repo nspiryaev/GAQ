@@ -76,14 +76,34 @@
     line-height: 22px;
     font-weight: 494;
     background-color: var(--colorRed);
+    border: none;
     color: var(--colorWight);
     transition: background-color .3s ease;
+    cursor: pointer;
  }
 
  .btn:hover {
-    background-color: #e4635c;
+    background-color: #e97e79;
  }
 
+ .btn__outline {
+   padding: 18px 49px;
+   border: 1px solid #E5E4E1;
+   background-color: transparent;
+   font-size: 22px;
+   line-height: 24px;
+   font-weight: 494;
+   color: var(--colorBlue);
+   transition: color .3s ease, background-color .3s ease;
+   cursor: pointer;
+ }
+ 
+ .btn__outline:hover {
+   color: var(--colorWight);
+   background-color: var(--colorGrey);
+ }
+
+ /* INDEX.HTML */
  /* Header */
 
  .header {
@@ -148,5 +168,202 @@
  .item__link:hover {
     color: var(--colorBlue);
  }
+
+ /* FORM.HTML */
+
+ .section {
+   padding-top: 40px;
+   padding-left: 200px;
+ }
+
+ /* Progress */
+
+ .steps__numbers {
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin-top: 90px;
+   margin-bottom: 60px;
+   max-width: 650px;
+ }
+
+ .step__number {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   margin-right: 100px;
+   width: 50px;
+   height: 50px;
+   border: 2px solid var(--colorLightGrey);
+   border-radius: 100%;
+   background-color: var(--colorWight);
+ }
+ 
+ .progress {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   bottom: 0;
+   right: 0;   
+   height: 2px;
+   background-color: var(--colorLightGrey);
+   z-index: -1;
+ }
+
+ /* Buttons */
+
+ .btn__button {
+   padding: 19px 49px;
+   font-size: 22px;
+   line-height: 24px;
+ }
+
+ .back__step {
+   margin-right: 20px;
+ }
+
+ /* STEP-1 */
+
+ .step__description {
+   max-width: 600px;
+   margin-top: 10px;   
+ }
+
+ /* Search */
+
+ .search {
+   position: relative;
+   display: flex;
+   margin-top: 40px;
+   max-width: 460px;
+ }
+
+ .search__input {
+   padding: 20px 65px;   
+   width: 100%;
+   border: 1px solid var(--colorLightGrey);
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 375;
+   color: var(--colorGrey);
+ }
+
+ .search__input:focus {
+   outline: 2px solid var(--colorLightGrey);
+ }
+
+ .search__input::placeholder {
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 375;
+   color: var(--colorGrey);
+ }
+
+ .imput__img {
+   position: absolute;
+   left: 30px;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ /* Radio */
+
+  .form__item {
+   margin-top: 40px;
+ }
+
+ .form__item-title {
+   margin-bottom: 20px;   
+   font-size: 25px;
+   line-height: 28px;
+   font-weight: 494;
+   color: var(--colorBlue);
+ }
+
+ .radio__label {
+   position: relative;
+   display: flex;
+   align-items: center;
+   min-width: 360px;
+   padding: 10px;
+   background-color: var(--colorLightBlue);
+   cursor: pointer;
+ }
+
+ .radio__input {
+   display: none;
+ }
+
+ .radio__text {
+   margin-left: 20px;  
+   font-size: 20px;
+   line-height: 22px;
+   font-weight: 494;
+   color: var(--colorBlue);
+ }
+
+ .radio__image {
+   padding: 10px;
+   width: 60px;
+   height: 60px;
+   background-color: var(--colorWight);
+ }
+
+ .radio__facke {
+   position: absolute;
+   right: 30px;
+   top: 50%;  
+   width: 30px;
+   height: 30px;
+   border: 1px solid var(--colorLightGrey);
+   border-radius: 100%;
+   background: var(--colorWight);
+   transform: translateY(-50%);
+ }
+
+ .radio__facke::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 20px;
+   height: 20px;
+   border-radius: 100%;
+   background-color: var(--colorRed);
+   opacity: 0;
+   transform: translate(-50%, -50%);   
+ }
+ 
+ .radio__border {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border: 1px solid var(--colorRed);
+   opacity: 0;
+ }
+
+ .radio__input:checked + .radio__facke {
+   border: 1px solid var(--colorRed);
+ }
+
+ .radio__input:checked ~ .radio__border {
+   opacity: 1;
+ }
+
+ .radio__input:checked + .radio__facke::after {
+   opacity: 1;
+ }
+
+ .radio__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-bottom: 80px;
+   max-width: 1140px;
+ }
+
 
  
