@@ -6,6 +6,16 @@
     min-width: 300px;
  }
 
+  /* Checkbox */
+
+  .checkbox__label {
+    min-width: 300px;
+  }
+
+  .checkbox__text {
+    max-width: 140px;
+  }
+
 }
 
  @media(max-width: 1200px) {
@@ -14,6 +24,16 @@
  
   .radio__label {
     min-width: 360px;
+  }
+
+  /* Checbox */
+
+  .checkbox__label {
+    min-width: 360px;
+  }
+
+  .checkbox__text {
+    max-width: 100%;
   }
 
 }
@@ -36,20 +56,30 @@
     padding-left: 100px;
   }
 
+  /* Checkbox */
+
+  .checkbox__label {
+    min-width: 300px;
+  }
+
+  .checkbox__text {
+    max-width: 140px;
+  }
+
 }
 
 @media(max-width: 768px) {
 
   /* INDEX.HTML */
     
-    .header__list {
-      flex-direction: column-reverse;
-    }
+  .header__list {
+    flex-direction: column-reverse;
+  }
 
-    .header__item:last-child {
-      margin: 0 auto;
-      padding-left: 0;
-      padding-top: 30px;
+  .header__item:last-child {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 30px;
   }
 
   .header__heading {
@@ -107,6 +137,37 @@
     margin-bottom: 60px;
   }
 
+  /* Checkbox */
+
+  .checkbox__label {
+    min-width: 80%;
+  }
+
+  .checkbox__list {
+    margin-bottom: 60px;
+  }
+
+  .checkbox__text {
+    max-width: 100%;
+  }
+
+  /* Profile */
+
+  .file__uploader {
+    flex-direction: column;
+  }
+
+  .file__uploader-item:first-child {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .file__uploader-item:first-child {
+    margin-right: 0;
+    max-width: 270px;
+    min-height: 270px;
+  }
+
 }
 
 @media(max-width: 576px) {
@@ -150,6 +211,31 @@
 
   .back__step {
     margin-right: 10px;
+  }
+
+  /* Checkbox */
+
+  .checkbox__label {
+    min-width: 400px;
+  }
+
+  .checkbox__list {
+    margin-bottom: 40px;
+  }
+
+  /* Check */
+
+  .check__text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  
+  .check__label {
+    padding: 12px 18px;
+  }
+  
+  .step__check  {
+    margin-bottom: 30px;
   }
 
 }
@@ -227,6 +313,29 @@
 
   .radio__list {
     margin-bottom: 20px;
+  }
+
+  /* Checkbox */
+
+  .checkbox__label {
+    min-width: 280px;
+  }
+
+  .checkbox__list {
+    margin-bottom: 20px;
+  }
+
+  .checkbox__text {
+    max-width: 140px;
+    font-size: 16px;
+    line-height: 130%;    
+  }
+
+  /* Profile */
+
+  .file__uploader {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
 }
