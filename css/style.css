@@ -42,7 +42,8 @@
     padding: 0;
   }
 
-  h3 {
+  h3,
+  h4 {
     margin: 0;
     padding: 0;
   }
@@ -64,8 +65,8 @@
  }
 
  .section__description {
-    font-size: 17px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 375;
     color: var(--colorGrey);
  }
@@ -261,7 +262,7 @@
    color: var(--colorGrey);
  }
 
- .imput__img {
+ .input__img {
    position: absolute;
    left: 30px;
    top: 50%;
@@ -611,3 +612,82 @@
 
 /* Data */
 
+.data__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-right: 40px;
+  margin-bottom: 120px;
+  max-width: 930px;
+}
+
+.data__form-name {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.data__input:not(:last-child) {
+  margin-right: 10px;
+}
+
+.data__textarea {  
+  min-height: 240px;
+}
+
+.data__textarea,
+.data__input {
+  flex: 0 1 50%;
+  padding: 20px 32px;
+  border: 1px solid var(--colorLightGrey);
+  background: var(--colorWight);
+}
+
+.data__textarea,
+.data__input,
+.data__textarea::placeholder,
+.data__input::placeholder {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 375;
+  color: var(--colorGrey);
+}
+
+.data__textarea:focus,
+.data__input:focus {
+  outline: 1px solid var(--colorGrey);
+}
+
+.data__input {
+  padding-left: 60px;
+  background-image: url('../images/user.svg');
+  background-repeat: no-repeat;
+  background-position: center left 30px;;
+}
+
+/* Finish */
+
+.finish {
+  /* display: none; */
+  padding: 125px 0;
+}
+
+.finifh__logo {
+  margin-bottom: 40px;
+}
+
+.finish__heading {
+  margin-top: 40px;
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 494;
+  color: var(--colorBlue);
+}
+
+.finish__btn {
+  display: inline-block;
+  padding-left: 50px;
+  margin-top: 65px;
+  background-image: url('../images/google-wight.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
